@@ -1,0 +1,18 @@
+function checkNumberType(num)
+{
+    if(num>0)
+    {
+        return "Number is greater than zero";
+    }
+    else if(num<0)
+    {
+        return "Number is less than zero";
+    }
+    else
+    {
+        return "Number is Zero";
+    }
+}
+
+let inputNum = 37;
+console.log(checkNumberType(inputNum));
