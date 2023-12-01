@@ -1,0 +1,31 @@
+function calculateGrade(mark)
+{
+    switch(true)
+    {
+        case (mark>=90 && mark<=100):
+        {
+            console.log("Grade A");
+            break;
+        }
+        case (mark>=70 && mark<=89):
+        {
+            console.log("Grade B");
+            break;
+        }
+        case (mark>=50 && mark<=69):
+        {
+            console.log("Grade C");
+            break;
+        }
+        case (mark>=40 && mark<=49):
+        {
+            console.log("Grade D");
+            break;
+        }
+        default:
+            console.log("Grade E! Failed");
+    }
+}
+
+let inputMark = 96;
+calculateGrade(inputMark);
