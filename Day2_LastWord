@@ -1,0 +1,24 @@
+function lastWord(inputSentence)
+{
+    // No Loop required if the sentence has a single word
+    if(inputSentence.indexOf(' ') < 0)
+    {
+        return inputSentence;
+    }
+
+    // Starting with last Index and decrementing it till it finds the white space
+    let currentIndex = inputSentence.length-1;
+    let len = 0;
+
+    while(inputSentence.charAt(currentIndex)!=' ')
+    {
+        len++;
+        currentIndex--;
+    }
+
+    console.log("The last word is "+inputSentence.substring(currentIndex)+" with length "+len);
+}
+
+// Input and Method Invocation
+let sentence = "Hello World";
+lastWord(sentence.trim());
