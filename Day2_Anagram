@@ -1,0 +1,23 @@
+function isAnagram(String1, String2)
+{
+    if(String1.length != String2.length)
+    {
+        return false;
+    }
+
+    // Converting the String to Array - Sort It - Convert back the Array to String
+    String1 = String1.split('').sort().join('');
+    String2 = String2.split('').sort().join('');
+
+    if(String1 === String2)
+    {
+        return true;
+    }
+    return false;
+
+}
+
+let str1 = "silent";
+let str2 = "irybfj";
+
+console.log(isAnagram(str1,str2));
