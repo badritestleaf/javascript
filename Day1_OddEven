@@ -1,0 +1,14 @@
+function checkOddOrEven(num)
+{
+    if(num%2==0)
+    {
+        return "Even Number";
+    }
+    else
+    {
+        return "Odd Number";
+    }
+}
+
+let inputNum = 35;
+console.log(checkOddOrEven(inputNum));
