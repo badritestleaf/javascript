@@ -1,0 +1,6 @@
+let arr = [8,4,1,10,65,100,7];
+arr.sort();
+let len = arr.length-1;
+
+console.log("Maximum Element :"+arr[len]+", Index : "+len);
+console.log("Minimum Element :"+arr[0]+", Index : 0");
